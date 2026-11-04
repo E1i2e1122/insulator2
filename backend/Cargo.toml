@@ -47,13 +47,13 @@ uuid = "1"
 rlimit = "0.10"
 
 [target.'cfg(windows)'.dependencies]
-rdkafka = { version = "0.36", features = [
+rdkafka = { version = "0.39", features = [
     "cmake-build",
     "ssl-vendored",
 ] } #todo: add "gssapi" to use scram on windows
 
 [target.'cfg(unix)'.dependencies]
-rdkafka = { version = "0.36", features = [
+rdkafka = { version = "0.39", features = [
     "cmake-build",
     "ssl-vendored",
     "gssapi",
